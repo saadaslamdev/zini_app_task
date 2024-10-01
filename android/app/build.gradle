@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.example.zini_pay_task"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 34  // Updated compile SDK to 34 as per the requirement
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+        coreLibraryDesugaringEnabled true  // Enabled desugaring for backward compatibility
     }
 
     kotlinOptions {
@@ -20,20 +20,16 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.zini_pay_task"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        targetSdk = 33  // Target SDK updated to 33 (Android 13 support)
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        multiDexEnabled true  // Added multiDex for backward compatibility
     }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.debug
         }
     }
@@ -41,4 +37,13 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // Added WindowManager for Android 12L and above
+    implementation 'androidx.window:window:1.0.0'
+    implementation 'androidx.window:window-java:1.0.0'
+
+    // Added desugaring dependency
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.2.2'
 }
