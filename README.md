@@ -3,6 +3,18 @@
 ## Overview
 The **ZiniPay Task** is a mobile application developed using Flutter that allows users to authenticate via an API and manage SMS syncing in the background. The app includes a simple user interface with two main pages: a login page and a home page where users can start or stop syncing incoming SMS messages.
 
+## Screenshots
+### User Interface
+Below are some screenshots of the application:
+
+#### Login and Home Screens
+| ![Login Screen](assets/images/login.png) | ![Home Inactive](assets/images/home_inactive.png) | ![Home Active](assets/images/home_active.png) |
+|-------------------------------------------|-----------------------------------------------------|-------------------------------------------------|
+
+#### Messages and Credentials Screens
+| ![Messages Screen](assets/images/messages.png) | ![Credentials Screen](assets/images/credentials.png) |
+|------------------------------------------------|-----------------------------------------------------|
+
 ## Features
 1. **Login Page**:
    - Two input fields for email and API key.
