@@ -1,11 +1,8 @@
 # ZiniPay Task
 
----
 ## Overview
 The **ZiniPay Task** is a mobile application developed using Flutter that allows users to authenticate via an API and manage SMS syncing in the background. The app includes a simple user interface with two main pages: a login page and a home page where users can start or stop syncing incoming SMS messages.
----
 
----
 ## Screenshots
 ### User Interface
 Below are some screenshots of the application:
@@ -17,9 +14,7 @@ Below are some screenshots of the application:
 #### Messages and Credentials Screens
 | ![Messages Screen](assets/images/preview_images/messages.jpg) | ![Credentials Screen](assets/images/preview_images/credentials.jpg) |
 |------------------------------------------------|-----------------------------------------------------|
----
 
----
 ## Features
 1. **Login Page**:
    - Two input fields for email and API key.
@@ -70,12 +65,10 @@ Below are some screenshots of the application:
      - View all devices/login credentials: `GET https://demo.zinipay.com/devices`
 ---
 
----
 ## Background Tasks
 The app runs continuously in the background, syncing SMS messages even when closed. It also handles cases where the device loses internet connectivity, queuing messages until the connection is restored.
 ---
 
----
 ## Setup Instructions
 To run the app locally, follow these steps:
 
@@ -86,14 +79,13 @@ To run the app locally, follow these steps:
 
 2. **Resolve Dependencies**:
    ```bash
-      flutter pub get
+   flutter pub get
 
 2. **Run the App**:
    ```bash
-      flutter run
+   flutter run
 ---
 
----
 ## 📦 Packages Used
 
 - [**dio**](https://pub.dev/packages/dio) – For making API requests
@@ -101,5 +93,4 @@ To run the app locally, follow these steps:
 - [**equatable**](https://pub.dev/packages/equatable) – Value equality for Dart objects
 - [**workmanager**](https://pub.dev/packages/workmanager) – For managing background tasks
 - [**flutter_local_notifications**](https://pub.dev/packages/flutter_local_notifications ) – For handling notifications
-
 ---
