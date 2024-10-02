@@ -5,7 +5,7 @@ The **ZiniPay Task** is a mobile application developed using Flutter that allows
 
 ## Preview Video
 You can watch the preview video of the ZiniPay Task app by clicking the link below:
-[Download Preview Video](assets/preview_video/preview_video.mp4)
+[Preview Video](assets/images/preview_video/preview_video.mp4)
 
 ## Screenshots
 ### User Interface
