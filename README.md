@@ -26,7 +26,13 @@ Below are some screenshots of the application:
    - Implements a persistent notification to indicate that SMS syncing is ongoing.
    - Automatically resumes syncing after an internet reconnection.
   
-3. **API Integration**:
+3. **All Messages Page**:
+   - Displayed all the messages from the endpoint provided for retrieving all the messages: `GET https://demo.zinipay.com/sms`.
+
+4. **All Credentials Page**:
+   - Displayed all the User Credentials from the endpoint provided for retrieving all devices/login credentials: `GET https://demo.zinipay.com/devices`.
+  
+4. **API Integration**:
    - All the api integration is handled in the class [**dio_helper.dart**](lib/src/features/data/helpers/dio_helper.dart)
       - **Login API**: Authenticates users using their email and API key.
         - **Endpoint**: `POST https://demo.zinipay.com/app/auth`
