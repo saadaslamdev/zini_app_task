@@ -74,3 +74,16 @@ To run the app locally, follow these steps:
    ```bash
    git clone https://github.com/yourusername/zini_pay_task.git
    cd zini_pay_task
+
+
+   ---
+
+## 📦 Packages Used
+
+- [**dio**](https://pub.dev/packages/dio) – For making API requests
+- [**dartz**](https://pub.dev/packages/dartz) – Functional programming
+- [**equatable**](https://pub.dev/packages/equatable) – Value equality for Dart objects
+- [**workmanager**](https://pub.dev/packages/workmanager) – For managing background tasks
+- [**flutter_local_notifications **](https://pub.dev/packages/flutter_local_notifications ) – For handling notifications
+
+---
