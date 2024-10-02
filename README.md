@@ -67,7 +67,6 @@ Below are some screenshots of the application:
 
 ## Background Tasks
 The app runs continuously in the background, syncing SMS messages even when closed. It also handles cases where the device loses internet connectivity, queuing messages until the connection is restored.
----
 
 ## Setup Instructions
 To run the app locally, follow these steps:
