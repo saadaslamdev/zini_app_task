@@ -27,45 +27,47 @@ Below are some screenshots of the application:
    - Automatically resumes syncing after an internet reconnection.
   
 3. **API Integration**:
-   - **Login API**: Authenticates users using their email and API key.
-     - **Endpoint**: `POST https://demo.zinipay.com/app/auth`
-     - **Request Body**:
-       ```json
-       {
-         "email": "user1@example.com",
-         "apiKey": "apikey1"
-       }
-       ```
-     - **Success Response**:
-       ```json
-       {
-         "success": true,
-         "message": "Authentication successful"
-       }
-       ```
-   - **SMS Sync API**: Sends incoming SMS messages to a specified endpoint.
-     - **Endpoint**: `POST https://demo.zinipay.com/sms/sync`
-     - **Request Body**:
-       ```json
-       {
-         "message": "Test message now",
-         "from": "+1234567890",
-         "timestamp": "2024-07-31T10:00:00Z"
-       }
-       ```
-     - **Success Response**:
-       ```json
-       {
-         "success": true,
-         "message": "SMS synced successfully."
-       }
-       ```
-   - **Additional Endpoints**: 
-     - Retrieve all messages: `GET https://demo.zinipay.com/sms`
-     - View all devices/login credentials: `GET https://demo.zinipay.com/devices`
+   - All the api integration is handled in the class [**dio_helper.dart**](lib/src/features/data/helpers/dio_helper.dart)
+      - **Login API**: Authenticates users using their email and API key.
+        - **Endpoint**: `POST https://demo.zinipay.com/app/auth`
+        - **Request Body**:
+          ```json
+          {
+            "email": "user1@example.com",
+            "apiKey": "apikey1"
+          }
+          ```
+        - **Success Response**:
+          ```json
+          {
+            "success": true,
+            "message": "Authentication successful"
+          }
+          ```
+      - **SMS Sync API**: Sends incoming SMS messages to a specified endpoint.
+        - **Endpoint**: `POST https://demo.zinipay.com/sms/sync`
+        - **Request Body**:
+          ```json
+          {
+            "message": "Test message now",
+            "from": "+1234567890",
+            "timestamp": "2024-07-31T10:00:00Z"
+          }
+          ```
+        - **Success Response**:
+          ```json
+          {
+            "success": true,
+            "message": "SMS synced successfully."
+          }
+          ```
+      - **Additional Endpoints**: 
+        - Retrieve all messages: `GET https://demo.zinipay.com/sms`
+        - View all devices/login credentials: `GET https://demo.zinipay.com/devices`
 ---
 
 ## Background Tasks
+Used [**workmanager**](https://pub.dev/packages/workmanager) library to handle the background tasks like syncing sms.
 The app runs continuously in the background, syncing SMS messages even when closed. It also handles cases where the device loses internet connectivity, queuing messages until the connection is restored.
 
 ## Setup Instructions
