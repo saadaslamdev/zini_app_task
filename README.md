@@ -8,11 +8,11 @@ The **ZiniPay Task** is a mobile application developed using Flutter that allows
 Below are some screenshots of the application:
 
 #### Login and Home Screens
-| ![Login Screen](assets/images/login.jpeg) | ![Home Inactive](assets/images/home_inactive.jpeg) | ![Home Active](assets/images/home_active.jpeg) |
+| ![Login Screen](assets/images/login.JPEG) | ![Home Inactive](assets/images/home_inactive.JPEG) | ![Home Active](assets/images/home_active.JPEG) |
 |-------------------------------------------|-----------------------------------------------------|-------------------------------------------------|
 
 #### Messages and Credentials Screens
-| ![Messages Screen](assets/images/messages.jpeg) | ![Credentials Screen](assets/images/credentials.jpeg) |
+| ![Messages Screen](assets/images/messages.JPEG) | ![Credentials Screen](assets/images/credentials.JPEG) |
 |------------------------------------------------|-----------------------------------------------------|
 
 ## Features
