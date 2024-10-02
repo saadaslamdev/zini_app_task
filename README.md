@@ -84,6 +84,6 @@ To run the app locally, follow these steps:
 - [**dartz**](https://pub.dev/packages/dartz) – Functional programming
 - [**equatable**](https://pub.dev/packages/equatable) – Value equality for Dart objects
 - [**workmanager**](https://pub.dev/packages/workmanager) – For managing background tasks
-- [**flutter_local_notifications **](https://pub.dev/packages/flutter_local_notifications ) – For handling notifications
+- [**flutter_local_notifications**](https://pub.dev/packages/flutter_local_notifications ) – For handling notifications
 
 ---
